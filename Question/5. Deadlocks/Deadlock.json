@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "question": "What is a reusable resource?",
+        "options": {
+            "a": "that can be used by one process at a time and is not depleted by that use",
+            "b": "that can be used by more than one process at a time",
+            "c": "that can be shared between various threads",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "Which of the following condition is required for a deadlock to be possible?",
+        "options": {
+            "a": "mutual exclusion",
+            "b": "a process may hold allocated resources while awaiting assignment of other resources",
+            "c": "no resource can be forcibly removed from a process holding it",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "A system is in the safe state if ____________",
+        "options": {
+            "a": "the system can allocate resources to each process in some order and still avoid a deadlock",
+            "b": "there exist a safe sequence",
+            "c": "all of the mentioned",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "The circular wait condition can be prevented by ____________",
+        "options": {
+            "a": "defining a linear ordering of resource types",
+            "b": "using thread",
+            "c": "using pipes",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "Which one of the following is the deadlock avoidance algorithm?",
+        "options": {
+            "a": "banker’s algorithm",
+            "b": "round-robin algorithm",
+            "c": "elevator algorithm",
+            "d": "karn’s algorithm"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "What is the drawback of banker’s algorithm?",
+        "options": {
+            "a": "in advance processes rarely know how much resource they will need",
+            "b": "the number of processes changes as time progresses",
+            "c": "resource once available can disappear",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "For an effective operating system, when to check for deadlock?",
+        "options": {
+            "a": "every time a resource request is made",
+            "b": "at fixed time intervals",
+            "c": "every time a resource request is made at fixed time intervals",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "A problem encountered in multitasking when a process is perpetually denied necessary resources is called ____________",
+        "options": {
+            "a": "deadlock",
+            "b": "starvation",
+            "c": "inversion",
+            "d": "aging"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "Which one of the following is a visual ( mathematical ) way to determine the deadlock occurrence?",
+        "options": {
+            "a": "resource allocation graph",
+            "b": "starvation graph",
+            "c": "inversion graph",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "To avoid deadlock ____________",
+        "options": {
+            "a": "there must be a fixed number of resources to allocate",
+            "b": "resource allocation must be done only once",
+            "c": "all deadlocked processes must be aborted",
+            "d": "inversion technique can be used"
+        },
+        "answer": "a",
+        "explanation": "None."
+    }
+]

@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "question": "A deadlock can be broken by ____________",
+        "options": {
+            "a": "abort one or more processes to break the circular wait",
+            "b": "abort all the process in the system",
+            "c": "preempt all resources from all processes",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "The two ways of aborting processes and eliminating deadlocks are ____________",
+        "options": {
+            "a": "Abort all deadlocked processes",
+            "b": "Abort all processes",
+            "c": "Abort one process at a time until the deadlock cycle is eliminated",
+            "d": "All of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "Those processes should be aborted on occurrence of a deadlock, the termination of which?",
+        "options": {
+            "a": "is more time consuming",
+            "b": "incurs minimum cost",
+            "c": "safety is not hampered",
+            "d": "all of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "The process to be aborted is chosen on the basis of the following factors?",
+        "options": {
+            "a": "priority of the process",
+            "b": "process is interactive or batch",
+            "c": "how long the process has computed",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "Cost factors for process termination include ____________",
+        "options": {
+            "a": "Number of resources the deadlock process is not holding",
+            "b": "CPU utilization at the time of deadlock",
+            "c": "Amount of time a deadlocked process has thus far consumed during its execution",
+            "d": "All of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "If we preempt a resource from a process, the process cannot continue with its normal execution and it must be ____________",
+        "options": {
+            "a": "aborted",
+            "b": "rolled back",
+            "c": "terminated",
+            "d": "queued"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "To _______ to a safe state, the system needs to keep more information about the states of processes.",
+        "options": {
+            "a": "abort the process",
+            "b": "roll back the process",
+            "c": "queue the process",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "If the resources are always preempted from the same process __________ can occur.",
+        "options": {
+            "a": "deadlock",
+            "b": "system crash",
+            "c": "aging",
+            "d": "starvation"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "What is the solution to starvation?",
+        "options": {
+            "a": "the number of rollbacks must be included in the cost factor",
+            "b": "the number of resources must be included in resource preemption",
+            "c": "resource preemption be done instead",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    }
+]

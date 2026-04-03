@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "question": "A monitor is a type of ____________",
+        "options": {
+            "a": "semaphore",
+            "b": "low level synchronization construct",
+            "c": "high level synchronization construct",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "A monitor is characterized by ____________",
+        "options": {
+            "a": "a set of programmer defined operators",
+            "b": "an identifier",
+            "c": "the number of variables in it",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "A procedure defined within a ________ can access only those variables declared locally within the _______ and its formal parameters.",
+        "options": {
+            "a": "process, semaphore",
+            "b": "process, monitor",
+            "c": "semaphore, semaphore",
+            "d": "monitor, monitor"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "The monitor construct ensures that ____________",
+        "options": {
+            "a": "only one process can be active at a time within the monitor",
+            "b": "n number of processes can be active at a time within the monitor (n being greater than 1)",
+            "c": "the queue has only one process in it at a time",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "What are the operations that can be invoked on a condition variable?",
+        "options": {
+            "a": "wait & signal",
+            "b": "hold & wait",
+            "c": "signal & hold",
+            "d": "continue & signal"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "Which is the process of invoking the wait operation?",
+        "options": {
+            "a": "suspended until another process invokes the signal operation",
+            "b": "waiting for another process to complete before it can itself call the signal operation",
+            "c": "stopped until the next process in the queue finishes execution",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "If no process is suspended, the signal operation ____________",
+        "options": {
+            "a": "puts the system into a deadlock state",
+            "b": "suspends some default process execution",
+            "c": "nothing happens",
+            "d": "the output is unpredictable"
+        },
+        "answer": "c",
+        "explanation": "None."
+    }
+]

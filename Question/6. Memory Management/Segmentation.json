@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "question": "In segmentation, each address is specified by ____________",
+        "options": {
+            "a": "a segment number & offset",
+            "b": "an offset & value",
+            "c": "a value & segment number",
+            "d": "a key & value"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "In paging the user provides only ________ which is partitioned by the hardware into ________ and ______",
+        "options": {
+            "a": "one address, page number, offset",
+            "b": "one offset, page number, address",
+            "c": "page number, offset, address",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "Each entry in a segment table has a ____________",
+        "options": {
+            "a": "segment base",
+            "b": "segment peak",
+            "c": "segment value",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "The segment base contains the ____________",
+        "options": {
+            "a": "starting logical address of the process",
+            "b": "starting physical address of the segment in memory",
+            "c": "segment length",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "The segment limit contains the ____________",
+        "options": {
+            "a": "starting logical address of the process",
+            "b": "starting physical address of the segment in memory",
+            "c": "segment length",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "The offset ‘d’ of the logical address must be ____________",
+        "options": {
+            "a": "greater than segment limit",
+            "b": "between 0 and segment limit",
+            "c": "between 0 and the segment number",
+            "d": "greater than the segment number"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "If the offset is legal ____________",
+        "options": {
+            "a": "it is used as a physical memory address itself",
+            "b": "it is subtracted from the segment base to produce the physical memory address",
+            "c": "it is added to the segment base to produce the physical memory address",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "When the entries in the segment tables of two different processes point to the same physical location ____________",
+        "options": {
+            "a": "the segments are invalid",
+            "b": "the processes get blocked",
+            "c": "segments are shared",
+            "d": "all of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "The protection bit is 0/1 based on ____________",
+        "options": {
+            "a": "write only",
+            "b": "read only",
+            "c": "read – write",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "If there are 32 segments, each of size 1Kb, then the logical address should have ____________",
+        "options": {
+            "a": "13 bits",
+            "b": "14 bits",
+            "c": "15 bits",
+            "d": "16 bits"
+        },
+        "answer": "c",
+        "explanation": "To specify a particular segment, 5 bits are required. To select a particular byte after selecting a page, 10 more bits are required. Hence 15 bits are required."
+    },
+    {
+        "id": 11,
+        "question": "Consider a computer with 8 Mbytes of main memory and a 128K cache. The cache block size is 4 K. It uses a direct mapping scheme for cache management. How many different main memory blocks can map onto a given physical cache block?",
+        "options": {
+            "a": "2048",
+            "b": "256",
+            "c": "64",
+            "d": "8"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 12,
+        "question": "A multilevel page table is preferred in comparison to a single level page table for translating virtual address to physical address because ____________",
+        "options": {
+            "a": "it reduces the memory access time to read or write a memory location",
+            "b": "it helps to reduce the size of page table needed to implement the virtual address space of a process",
+            "c": "it is required by the translation lookaside buffer",
+            "d": "it helps to reduce the number of page faults in page replacement algorithms"
+        },
+        "answer": "b",
+        "explanation": "None."
+    }
+]

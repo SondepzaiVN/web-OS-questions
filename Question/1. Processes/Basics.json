@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "question": "What is an operating system?",
+        "options": {
+            "a": "interface between the hardware and application programs",
+            "b": "collection of programs that manages hardware resources",
+            "c": "system service provider to the application programs",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "An Operating System acts as an intermediary between user/user applications/application programs and hardware. It is a program that manages hardware resources. It provides services to application programs."
+    },
+    {
+        "id": 2,
+        "question": "What is the main function of the command interpreter?",
+        "options": {
+            "a": "to provide the interface between the API and application program",
+            "b": "to handle the files in the operating system",
+            "c": "to get and execute the next user-specified command",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "The main function of a command interpreter is to get and execute the next user-specified command. Command Interpreter checks for valid command and then runs that command else it will throw an error."
+    },
+    {
+        "id": 3,
+        "question": "In Operating Systems, which of the following is/are CPU scheduling algorithms?",
+        "options": {
+            "a": "Priority",
+            "b": "Round Robin",
+            "c": "Shortest Job First",
+            "d": "All of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "In Operating Systems, CPU scheduling algorithms are:\ni) First Come First Served scheduling\nii) Shortest Job First scheduling\niii) Priority scheduling\niv) Round Robin scheduling\nv) Multilevel Queue scheduling\nvi) Multilevel Feedback Queue scheduling\nAll of these scheduling algorithms have their own advantages and disadvantages."
+    },
+    {
+        "id": 4,
+        "question": "To access the services of the operating system, the interface is provided by the ___________",
+        "options": {
+            "a": "Library",
+            "b": "System calls",
+            "c": "Assembly instructions",
+            "d": "API"
+        },
+        "answer": "b",
+        "explanation": "To access services of the Operating System an interface is provided by the System Calls. Generally, these are functions written in C and C++. Open, Close, Read, Write are some of most prominently used system calls."
+    },
+    {
+        "id": 5,
+        "question": "CPU scheduling is the basis of ___________",
+        "options": {
+            "a": "multiprogramming operating systems",
+            "b": "larger memory sized systems",
+            "c": "multiprocessor systems",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "Which one of the following is not true?",
+        "options": {
+            "a": "kernel remains in the memory during the entire computer session",
+            "b": "kernel is made of various modules which can not be loaded in running operating system",
+            "c": "kernel is the first part of the operating system to load into memory during booting",
+            "d": "kernel is the program that constitutes the central core of the operating system"
+        },
+        "answer": "b",
+        "explanation": "Kernel is the first program that is loaded in memory when OS is loading as well as it remains in memory till OS is running. Kernel is the core part of the OS which is responsible for managing resources, allowing multiple processes to use the resources and provide services to various processes. Kernel modules can be loaded and unloaded in run-time i.e. in running OS."
+    },
+    {
+        "id": 7,
+        "question": "Which one of the following errors will be handle by the operating system?",
+        "options": {
+            "a": "lack of paper in printer",
+            "b": "connection failure in the network",
+            "c": "power failure",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "All the mentioned errors are handled by OS. The OS is continuously monitoring all of its resources. Also, the OS is constantly detecting and correcting errors."
+    },
+    {
+        "id": 8,
+        "question": "Where is the operating system placed in the memory?",
+        "options": {
+            "a": "either low or high memory (depending on the location of interrupt vector)",
+            "b": "in the low memory",
+            "c": "in the high memory",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "If a process fails, most operating system write the error information to a ______",
+        "options": {
+            "a": "new file",
+            "b": "another running process",
+            "c": "log file",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "If a process fails, most operating systems write the error information to a log file. Log file is examined by the debugger, to find out what is the actual cause of that particular problem. Log file is useful for system programmers for correcting errors."
+    },
+    {
+        "id": 10,
+        "question": "Which one of the following is not a real time operating system?",
+        "options": {
+            "a": "RTLinux",
+            "b": "Palm OS",
+            "c": "QNX",
+            "d": "VxWorks"
+        },
+        "answer": "b",
+        "explanation": "VxWorks, QNX & RTLinux are real-time operating systems. Palm OS is a mobile operating system. Palm OS is developed for Personal Digital Assistants (PDAs)."
+    },
+    {
+        "id": 11,
+        "question": "What does OS X has?",
+        "options": {
+            "a": "monolithic kernel with modules",
+            "b": "microkernel",
+            "c": "monolithic kernel",
+            "d": "hybrid kernel"
+        },
+        "answer": "d",
+        "explanation": "OS X has a hybrid kernel. Hybrid kernel is a combination of two different kernels. OS X is developed by Apple and originally it is known as Mac OS X."
+    },
+    {
+        "id": 12,
+        "question": "In operating system, each process has its own __________",
+        "options": {
+            "a": "open files",
+            "b": "pending alarms, signals, and signal handlers",
+            "c": "address space and global variables",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "In Operating Systems, each process has its own address space which contains code, data, stack, and heap segments or sections. Each process also has a list of files that is opened by the process as well as all pending alarms, signals, and various signal handlers."
+    },
+    {
+        "id": 13,
+        "question": "In a timeshare operating system, when the time slot assigned to a process is completed, the process switches from the current state to?",
+        "options": {
+            "a": "Suspended state",
+            "b": "Terminated state",
+            "c": "Ready state",
+            "d": "Blocked state"
+        },
+        "answer": "c",
+        "explanation": "In a time-sharing operating system, when the time slot given to a process is completed, the process goes from the running state to the Ready State. In a time-sharing operating system, unit time is defined for sharing CPU, it is called a time quantum or time slice. If a process takes less than 1 time quantum, then the process itself releases the CPU."
+    },
+    {
+        "id": 14,
+        "question": "Cascading termination refers to the termination of all child processes if the parent process terminates ______",
+        "options": {
+            "a": "Normally or abnormally",
+            "b": "Abnormally",
+            "c": "Normally",
+            "d": "None of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "Cascading termination refers to the termination of all child processes if the parent process terminates Normally or Abnormally. Some systems don’t allow child processes to exist if the parent process has terminated. Cascading termination is normally initiated by the operating system."
+    },
+    {
+        "id": 15,
+        "question": "When a process is in a “Blocked” state waiting for some I/O service. When the service is completed, it goes to the __________",
+        "options": {
+            "a": "Terminated state",
+            "b": "Suspended state",
+            "c": "Running state",
+            "d": "Ready state"
+        },
+        "answer": "d",
+        "explanation": "Suppose that a process is in “Blocked” state waiting for some I/O service. When the service is completed, it goes to the ready state. Process never goes directly to the running state from the waiting state. Only processes which are in ready state go to the running state whenever CPU allocated by operating system."
+    },
+    {
+        "id": 16,
+        "question": "Transient operating system code is a code that ____________",
+        "options": {
+            "a": "stays in the memory always",
+            "b": "never enters the memory space",
+            "c": "comes and goes as needed",
+            "d": "is not easily accessible"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 17,
+        "question": "The portion of the process scheduler in an operating system that dispatches processes is concerned with ____________",
+        "options": {
+            "a": "assigning ready processes to waiting queue",
+            "b": "assigning running processes to blocked queue",
+            "c": "assigning ready processes to CPU",
+            "d": "all of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 18,
+        "question": "The FCFS algorithm is particularly troublesome for ____________",
+        "options": {
+            "a": "operating systems",
+            "b": "multiprocessor systems",
+            "c": "time sharing systems",
+            "d": "multiprogramming systems"
+        },
+        "answer": "c",
+        "explanation": "In a time sharing system, each user needs to get a share of the CPU at regular intervals."
+    },
+    {
+        "id": 19,
+        "question": "For an effective operating system, when to check for deadlock?",
+        "options": {
+            "a": "every time a resource request is made at fixed time intervals",
+            "b": "at fixed time intervals",
+            "c": "every time a resource request is made",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "In an effective operating system, we must verify the deadlock each time a request for resources is made at fixed time intervals."
+    },
+    {
+        "id": 20,
+        "question": "A deadlock avoidance algorithm dynamically examines the __________ to ensure that a circular wait condition can never exist.",
+        "options": {
+            "a": "operating system",
+            "b": "resources",
+            "c": "system storage state",
+            "d": "resource allocation state"
+        },
+        "answer": "d",
+        "explanation": "Resource allocation states are used to maintain the availability of the already and current available resources."
+    },
+    {
+        "id": 21,
+        "question": "Swapping _______ be done when a process has pending I/O, or has to execute I/O operations only into operating system buffers.",
+        "options": {
+            "a": "must never",
+            "b": "maybe",
+            "c": "can",
+            "d": "must"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 22,
+        "question": "The main memory accommodates ____________",
+        "options": {
+            "a": "cpu",
+            "b": "user processes",
+            "c": "operating system",
+            "d": "all of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 23,
+        "question": "The operating system is responsible for?",
+        "options": {
+            "a": "bad-block recovery",
+            "b": "booting from disk",
+            "c": "disk initialization",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 24,
+        "question": "The operating system and the other processes are protected from being modified by an already running process because ____________",
+        "options": {
+            "a": "every address generated by the CPU is being checked against the relocation and limit registers",
+            "b": "they have a protection algorithm",
+            "c": "they are in different memory spaces",
+            "d": "they are in different logical addresses"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 25,
+        "question": "Using transient code, _______ the size of the operating system during program execution.",
+        "options": {
+            "a": "maintains",
+            "b": "changes",
+            "c": "increases",
+            "d": "decreases"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 26,
+        "question": "The operating system maintains a ______ table that keeps track of how many frames have been allocated, how many are there, and how many are available.",
+        "options": {
+            "a": "memory",
+            "b": "mapping",
+            "c": "page",
+            "d": "frame"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 27,
+        "question": "To obtain better memory utilization, dynamic loading is used. With dynamic loading, a routine is not loaded until it is called. For implementing dynamic loading ____________",
+        "options": {
+            "a": "special support from operating system is essential",
+            "b": "special support from hardware is required",
+            "c": "user programs can implement dynamic loading without any special support from hardware or operating system",
+            "d": "special support from both hardware and operating system is essential"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 28,
+        "question": "The _________ presents a uniform device-access interface to the I/O subsystem, much as system calls provide a standard interface between the application and the operating system.",
+        "options": {
+            "a": "Device drivers",
+            "b": "I/O systems",
+            "c": "Devices",
+            "d": "Buses"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 29,
+        "question": "In real time operating system ____________",
+        "options": {
+            "a": "process scheduling can be done only once",
+            "b": "all processes have the same priority",
+            "c": "kernel is not required",
+            "d": "a task must be serviced by its deadline period"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 30,
+        "question": "Hard real time operating system has ______________ jitter than a soft real time operating system.",
+        "options": {
+            "a": "equal",
+            "b": "more",
+            "c": "less",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "Jitter is the undesired deviation from the true periodicity."
+    },
+    {
+        "id": 31,
+        "question": "For real time operating systems, interrupt latency should be ____________",
+        "options": {
+            "a": "zero",
+            "b": "minimal",
+            "c": "maximum",
+            "d": "dependent on the scheduling"
+        },
+        "answer": "b",
+        "explanation": "Interrupt latency is the time duration between the generation of interrupt and execution of its service."
+    },
+    {
+        "id": 32,
+        "question": "Which one of the following is a real time operating system?",
+        "options": {
+            "a": "Windows CE",
+            "b": "RTLinux",
+            "c": "VxWorks",
+            "d": "All of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 33,
+        "question": "The priority of a process will ______________ if the scheduler assigns it a static priority.",
+        "options": {
+            "a": "depends on the operating system",
+            "b": "change",
+            "c": "remain unchanged",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 34,
+        "question": "What are the characteristics of Host based IDS?",
+        "options": {
+            "a": "Logs are analysed to detect tails of intrusion",
+            "b": "The host operating system logs in the audit information",
+            "c": "Logs includes logins, file opens, and program executions",
+            "d": "All of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 35,
+        "question": "What are the characteristics of stack based IDS?",
+        "options": {
+            "a": "It is programmed to interpret a certain series of packets",
+            "b": "It models the normal usage of the network as a noise characterization",
+            "c": "They are integrated closely with the TCP/IP stack and watch packets",
+            "d": "The host operating system logs in the audit information"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 36,
+        "question": "If the sum of the working – set sizes increases, exceeding the total number of available frames ____________",
+        "options": {
+            "a": "the operating system selects a process to suspend",
+            "b": "the system crashes",
+            "c": "then the process crashes",
+            "d": "the memory overflows"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 37,
+        "question": "The information about all files is kept in ____________",
+        "options": {
+            "a": "operating system",
+            "b": "separate directory structure",
+            "c": "swap space",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 38,
+        "question": "The operating system keeps a small table containing information about all open files called ____________",
+        "options": {
+            "a": "file table",
+            "b": "directory table",
+            "c": "open-file table",
+            "d": "system table"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 39,
+        "question": "What will happen in the single level directory?",
+        "options": {
+            "a": "All files are contained in the same directory",
+            "b": "All files are contained in different directories all at the same level",
+            "c": "Depends on the operating system",
+            "d": "None of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 40,
+        "question": "The operating system _______ the links when traversing directory trees, to preserve the acyclic structure of the system.",
+        "options": {
+            "a": "deletes",
+            "b": "considers",
+            "c": "ignores",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 41,
+        "question": "To recover from failures in the network operations _____________ information may be maintained.",
+        "options": {
+            "a": "operating system",
+            "b": "ip address",
+            "c": "stateless",
+            "d": "state"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 42,
+        "question": "On systems where there are multiple operating system, the decision to load a particular one is done by _____________",
+        "options": {
+            "a": "process control block",
+            "b": "file control block",
+            "c": "boot loader",
+            "d": "bootstrap"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 43,
+        "question": "Whenever a process needs I/O to or from a disk it issues a ______________",
+        "options": {
+            "a": "system call to the operating system",
+            "b": "a special procedure",
+            "c": "system call to the CPU",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 44,
+        "question": "The two steps the operating system takes to use a disk to hold its files are _______ and ________",
+        "options": {
+            "a": "caching & logical formatting",
+            "b": "logical formatting & swap space creation",
+            "c": "swap space creation & caching",
+            "d": "partitioning & logical formatting"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 45,
+        "question": "The _______ program initializes all aspects of the system, from CPU registers to device controllers and the contents of main memory, and then starts the operating system.",
+        "options": {
+            "a": "bootstrap",
+            "b": "main",
+            "c": "bootloader",
+            "d": "rom"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 46,
+        "question": "In SCSI disks used in high end PCs, the controller maintains a list of _________ on the disk. The disk is initialized during ________ formatting which sets aside spare sectors not visible to the operating system.",
+        "options": {
+            "a": "destroyed blocks, partitioning",
+            "b": "bad blocks, low level formatting",
+            "c": "destroyed blocks, high level formatting",
+            "d": "bad blocks, partitioning"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 47,
+        "question": "Which principle states that programs, users, and even the systems be given just enough privileges to perform their task?",
+        "options": {
+            "a": "principle of least privilege",
+            "b": "principle of process scheduling",
+            "c": "principle of operating system",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 48,
+        "question": "Network operating system runs on ___________",
+        "options": {
+            "a": "every system in the network",
+            "b": "server",
+            "c": "both server and every system in the network",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 49,
+        "question": "What are the types of distributed operating systems?",
+        "options": {
+            "a": "Zone based Operating system",
+            "b": "Level based Operating system",
+            "c": "Network Operating system",
+            "d": "All of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 50,
+        "question": "In Unix, which system call creates the new process?",
+        "options": {
+            "a": "create",
+            "b": "fork",
+            "c": "new",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "In UNIX, a new process is created by fork() system call. fork() system call returns a process ID which is generally the process id of the child process created."
+    }
+]

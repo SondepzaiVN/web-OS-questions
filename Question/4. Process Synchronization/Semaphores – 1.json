@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "question": "An un-interruptible unit is known as ____________",
+        "options": {
+            "a": "single",
+            "b": "atomic",
+            "c": "static",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "TestAndSet instruction is executed ____________",
+        "options": {
+            "a": "after a particular process",
+            "b": "periodically",
+            "c": "atomically",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "Semaphore is a/an _______ to solve the critical section problem.",
+        "options": {
+            "a": "hardware for a system",
+            "b": "special program for a system",
+            "c": "integer variable",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "What are the two atomic operations permissible on semaphores?",
+        "options": {
+            "a": "wait and signal",
+            "b": "stop and wait",
+            "c": "hold and signal",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "What are Spinlocks?",
+        "options": {
+            "a": "CPU cycles wasting locks over critical sections of programs",
+            "b": "Locks that avoid time wastage in context switches",
+            "c": "Locks that work better on multiprocessor systems",
+            "d": "All of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "What is the main disadvantage of spinlocks?",
+        "options": {
+            "a": "they are not sufficient for many process",
+            "b": "they require busy waiting",
+            "c": "they are unreliable sometimes",
+            "d": "they are too complex for programmers"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "The wait operation of the semaphore basically works on the basic _______ system call.",
+        "options": {
+            "a": "stop()",
+            "b": "block()",
+            "c": "hold()",
+            "d": "wait()"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "The signal operation of the semaphore basically works on the basic _______ system call.",
+        "options": {
+            "a": "continue()",
+            "b": "wakeup()",
+            "c": "getup()",
+            "d": "start()"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "If the semaphore value is negative ____________",
+        "options": {
+            "a": "its magnitude is the number of processes waiting on that semaphore",
+            "b": "it is invalid",
+            "c": "no operation can be further performed on it until the signal operation is performed on it",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "The code that changes the value of the semaphore is ____________",
+        "options": {
+            "a": "remainder section code",
+            "b": "non – critical section code",
+            "c": "critical section code",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    }
+]

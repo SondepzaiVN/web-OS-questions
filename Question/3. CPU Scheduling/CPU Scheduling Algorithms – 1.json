@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "question": "Round robin scheduling falls under the category of ____________",
+        "options": {
+            "a": "Non-preemptive scheduling",
+            "b": "Preemptive scheduling",
+            "c": "All of the mentioned",
+            "d": "None of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "With round robin scheduling algorithm in a time shared system ____________",
+        "options": {
+            "a": "using very large time slices converts it into First come First served scheduling algorithm",
+            "b": "using very small time slices converts it into First come First served scheduling algorithm",
+            "c": "using extremely small time slices increases performance",
+            "d": "using very small time slices converts it into Shortest Job First algorithm"
+        },
+        "answer": "a",
+        "explanation": "All the processes will be able to get completed."
+    },
+    {
+        "id": 3,
+        "question": "The portion of the process scheduler in an operating system that dispatches processes is concerned with ____________",
+        "options": {
+            "a": "assigning ready processes to CPU",
+            "b": "assigning ready processes to waiting queue",
+            "c": "assigning running processes to blocked queue",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "Complex scheduling algorithms ____________",
+        "options": {
+            "a": "are very appropriate for very large computers",
+            "b": "use minimal resources",
+            "c": "use many resources",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "Large computers are overloaded with a greater number of processes."
+    },
+    {
+        "id": 5,
+        "question": "What is FIFO algorithm?",
+        "options": {
+            "a": "first executes the job that came in last in the queue",
+            "b": "first executes the job that came in first in the queue",
+            "c": "first executes the job that needs minimal processor",
+            "d": "first executes the job that has maximum processor needs"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "The strategy of making processes that are logically runnable to be temporarily suspended is called ____________",
+        "options": {
+            "a": "Non preemptive scheduling",
+            "b": "Preemptive scheduling",
+            "c": "Shortest job first",
+            "d": "First come First served"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "What is Scheduling?",
+        "options": {
+            "a": "allowing a job to use the processor",
+            "b": "making proper use of processor",
+            "c": "all of the mentioned",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "There are 10 different processes running on a workstation. Idle processes are waiting for an input event in the input queue. Busy processes are scheduled with the Round-Robin time sharing method. Which out of the following quantum times is the best value for small response times, if the processes have a short runtime, e.g. less than 10ms?",
+        "options": {
+            "a": "tQ = 15ms",
+            "b": "tQ = 40ms",
+            "c": "tQ = 45ms",
+            "d": "tQ = 50ms"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "Orders are processed in the sequence they arrive if _______ rule sequences the jobs.",
+        "options": {
+            "a": "earliest due date",
+            "b": "slack time remaining",
+            "c": "first come, first served",
+            "d": "critical ratio"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "Which of the following algorithms tends to minimize the process flow time?",
+        "options": {
+            "a": "First come First served",
+            "b": "Shortest Job First",
+            "c": "Earliest Deadline First",
+            "d": "Longest Job First"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 11,
+        "question": "Under multiprogramming, turnaround time for short jobs is usually ________ and that for long jobs is slightly ___________",
+        "options": {
+            "a": "Lengthened; Shortened",
+            "b": "Shortened; Lengthened",
+            "c": "Shortened; Shortened",
+            "d": "Shortened; Unchanged"
+        },
+        "answer": "b",
+        "explanation": "None."
+    }
+]

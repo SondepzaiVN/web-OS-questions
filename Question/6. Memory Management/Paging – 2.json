@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "question": "Each entry in a translation lookaside buffer (TLB) consists of ____________",
+        "options": {
+            "a": "key",
+            "b": "value",
+            "c": "bit value",
+            "d": "constant"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "If a page number is not found in the TLB, then it is known as a ____________",
+        "options": {
+            "a": "TLB miss",
+            "b": "Buffer miss",
+            "c": "TLB hit",
+            "d": "All of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "An ______ uniquely identifies processes and is used to provide address space protection for that process.",
+        "options": {
+            "a": "address space locator",
+            "b": "address space identifier",
+            "c": "address process identifier",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "The percentage of times a page number is found in the TLB is known as ____________",
+        "options": {
+            "a": "miss ratio",
+            "b": "hit ratio",
+            "c": "miss percent",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "Memory protection in a paged environment is accomplished by ____________",
+        "options": {
+            "a": "protection algorithm with each page",
+            "b": "restricted access rights to users",
+            "c": "restriction on page visibility",
+            "d": "protection bit with each page"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "When the valid – invalid bit is set to valid, it means that the associated page ____________",
+        "options": {
+            "a": "is in the TLB",
+            "b": "has data in it",
+            "c": "is in the process’s logical address space",
+            "d": "is the system’s physical address space"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "Illegal addresses are trapped using the _____ bit.",
+        "options": {
+            "a": "error",
+            "b": "protection",
+            "c": "valid – invalid",
+            "d": "access"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "When there is a large logical address space, the best way of paging would be ____________",
+        "options": {
+            "a": "not to page",
+            "b": "a two level paging algorithm",
+            "c": "the page table itself",
+            "d": "all of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "In a paged memory, the page hit ratio is 0.35. The required to access a page in secondary memory is equal to 100 ns. The time required to access a page in primary memory is 10 ns. The average time required to access a page is?",
+        "options": {
+            "a": "3.0 ns",
+            "b": "68.0 ns",
+            "c": "68.5 ns",
+            "d": "78.5 ns"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "To obtain better memory utilization, dynamic loading is used. With dynamic loading, a routine is not loaded until it is called. For implementing dynamic loading ____________",
+        "options": {
+            "a": "special support from hardware is required",
+            "b": "special support from operating system is essential",
+            "c": "special support from both hardware and operating system is essential",
+            "d": "user programs can implement dynamic loading without any special support from hardware or operating system"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 11,
+        "question": "In paged memory systems, if the page size is increased, then the internal fragmentation generally ____________",
+        "options": {
+            "a": "becomes less",
+            "b": "becomes more",
+            "c": "remains constant",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    }
+]

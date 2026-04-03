@@ -1,0 +1,158 @@
+[
+    {
+        "id": 1,
+        "question": "The number of resources requested by a process ____________",
+        "options": {
+            "a": "must always be less than the total number of resources available in the system",
+            "b": "must always be equal to the total number of resources available in the system",
+            "c": "must not exceed the total number of resources available in the system",
+            "d": "must exceed the total number of resources available in the system"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "The request and release of resources are ___________",
+        "options": {
+            "a": "command line statements",
+            "b": "interrupts",
+            "c": "system calls",
+            "d": "special programs"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "What are Multithreaded programs?",
+        "options": {
+            "a": "lesser prone to deadlocks",
+            "b": "more prone to deadlocks",
+            "c": "not at all prone to deadlocks",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "Multiple threads can compete for shared resources."
+    },
+    {
+        "id": 4,
+        "question": "For a deadlock to arise, which of the following conditions must hold simultaneously?",
+        "options": {
+            "a": "Mutual exclusion",
+            "b": "No preemption",
+            "c": "Hold and wait",
+            "d": "All of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "For Mutual exclusion to prevail in the system ____________",
+        "options": {
+            "a": "at least one resource must be held in a non sharable mode",
+            "b": "the processor must be a uniprocessor rather than a multiprocessor",
+            "c": "there must be at least one resource in a sharable mode",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "If another process requests that resource (non – shareable resource), the requesting process must be delayed until the resource has been released."
+    },
+    {
+        "id": 6,
+        "question": "For a Hold and wait condition to prevail ____________",
+        "options": {
+            "a": "A process must be not be holding a resource, but waiting for one to be freed, and then request to acquire it",
+            "b": "A process must be holding at least one resource and waiting to acquire additional resources that are being held by other processes",
+            "c": "A process must hold at least one resource and not be waiting to acquire additional resources",
+            "d": "None of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "Deadlock prevention is a set of methods ____________",
+        "options": {
+            "a": "to ensure that at least one of the necessary conditions cannot hold",
+            "b": "to ensure that all of the necessary conditions do not hold",
+            "c": "to decide if the requested resources for a process have to be given or not",
+            "d": "to recover from a deadlock"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "For non sharable resources like a printer, mutual exclusion ____________",
+        "options": {
+            "a": "must exist",
+            "b": "must not exist",
+            "c": "may exist",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "A printer cannot be simultaneously shared by several processes."
+    },
+    {
+        "id": 9,
+        "question": "For sharable resources, mutual exclusion ____________",
+        "options": {
+            "a": "is required",
+            "b": "is not required",
+            "c": "may be or may not be required",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "They do not require mutually exclusive access, and hence cannot be involved in a deadlock."
+    },
+    {
+        "id": 10,
+        "question": "To ensure that the hold and wait condition never occurs in the system, it must be ensured that ____________",
+        "options": {
+            "a": "whenever a resource is requested by a process, it is not holding any other resources",
+            "b": "each process must request and be allocated all its resources before it begins its execution",
+            "c": "a process can request resources only when it has none",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "c – A process may request some resources and use them. Before it can can request any additional resources, however it must release all the resources that it is currently allocated."
+    },
+    {
+        "id": 11,
+        "question": "The disadvantage of a process being allocated all its resources before beginning its execution is ____________",
+        "options": {
+            "a": "Low CPU utilization",
+            "b": "Low resource utilization",
+            "c": "Very high resource utilization",
+            "d": "None of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 12,
+        "question": "To ensure no preemption, if a process is holding some resources and requests another resource that cannot be immediately allocated to it ____________",
+        "options": {
+            "a": "then the process waits for the resources be allocated to it",
+            "b": "the process keeps sending requests until the resource is allocated to it",
+            "c": "the process resumes execution without the resource being allocated to it",
+            "d": "then all resources currently being held are preempted"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 13,
+        "question": "One way to ensure that the circular wait condition never holds is to ____________",
+        "options": {
+            "a": "impose a total ordering of all resource types and to determine whether one precedes another in the ordering",
+            "b": "to never let a process acquire resources that are held by other processes",
+            "c": "to let a process wait for only one resource at a time",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    }
+]

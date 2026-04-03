@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "question": "Which module gives control of the CPU to the process selected by the short-term scheduler?",
+        "options": {
+            "a": "dispatcher",
+            "b": "interrupt",
+            "c": "scheduler",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "The processes that are residing in main memory and are ready and waiting to execute are kept on a list called _____________",
+        "options": {
+            "a": "job queue",
+            "b": "ready queue",
+            "c": "execution queue",
+            "d": "process queue"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "The interval from the time of submission of a process to the time of completion is termed as ____________",
+        "options": {
+            "a": "waiting time",
+            "b": "turnaround time",
+            "c": "response time",
+            "d": "throughput"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "Which scheduling algorithm allocates the CPU first to the process that requests the CPU first?",
+        "options": {
+            "a": "first-come, first-served scheduling",
+            "b": "shortest job scheduling",
+            "c": "priority scheduling",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "In priority scheduling algorithm ____________",
+        "options": {
+            "a": "CPU is allocated to the process with highest priority",
+            "b": "CPU is allocated to the process with lowest priority",
+            "c": "Equal priority processes can not be scheduled",
+            "d": "None of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "In priority scheduling algorithm, when a process arrives at the ready queue, its priority is compared with the priority of ____________",
+        "options": {
+            "a": "all process",
+            "b": "currently running process",
+            "c": "parent process",
+            "d": "init process"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "Which algorithm is defined in Time quantum?",
+        "options": {
+            "a": "shortest job scheduling algorithm",
+            "b": "round robin scheduling algorithm",
+            "c": "priority scheduling algorithm",
+            "d": "multilevel queue scheduling algorithm"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "Process are classified into different groups in ____________",
+        "options": {
+            "a": "shortest job scheduling algorithm",
+            "b": "round robin scheduling algorithm",
+            "c": "priority scheduling algorithm",
+            "d": "multilevel queue scheduling algorithm"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "In multilevel feedback scheduling algorithm ____________",
+        "options": {
+            "a": "a process can move to a different classified ready queue",
+            "b": "classification of ready queue is permanent",
+            "c": "processes are not classified into groups",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "Which one of the following can not be scheduled by the kernel?",
+        "options": {
+            "a": "kernel level thread",
+            "b": "user level thread",
+            "c": "process",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "User level threads are managed by thread library and the kernel is unaware of them."
+    }
+]

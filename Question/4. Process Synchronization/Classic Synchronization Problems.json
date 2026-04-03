@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "question": "The bounded buffer problem is also known as ____________",
+        "options": {
+            "a": "Readers – Writers problem",
+            "b": "Dining – Philosophers problem",
+            "c": "Producer – Consumer problem",
+            "d": "None of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "In the bounded buffer problem, there are the empty and full semaphores that ____________",
+        "options": {
+            "a": "count the number of empty and full buffers",
+            "b": "count the number of empty and full memory spaces",
+            "c": "count the number of empty and full queues",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "In the bounded buffer problem ____________",
+        "options": {
+            "a": "there is only one buffer",
+            "b": "there are n buffers ( n being greater than one but finite)",
+            "c": "there are infinite buffers",
+            "d": "the buffer size is bounded"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "To ensure difficulties do not arise in the readers – writers problem _______ are given exclusive access to the shared object.",
+        "options": {
+            "a": "readers",
+            "b": "writers",
+            "c": "readers and writers",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "The dining – philosophers problem will occur in case of ____________",
+        "options": {
+            "a": "5 philosophers and 5 chopsticks",
+            "b": "4 philosophers and 5 chopsticks",
+            "c": "3 philosophers and 5 chopsticks",
+            "d": "6 philosophers and 5 chopsticks"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "A deadlock free solution to the dining philosophers problem ____________",
+        "options": {
+            "a": "necessarily eliminates the possibility of starvation",
+            "b": "does not necessarily eliminate the possibility of starvation",
+            "c": "eliminates any possibility of any kind of problem further",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    }
+]

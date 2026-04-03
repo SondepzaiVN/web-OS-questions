@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "question": "CPU scheduling is the basis of ___________",
+        "options": {
+            "a": "multiprocessor systems",
+            "b": "multiprogramming operating systems",
+            "c": "larger memory sized systems",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "With multiprogramming ______ is used productively.",
+        "options": {
+            "a": "time",
+            "b": "space",
+            "c": "money",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "What are the two steps of a process execution?",
+        "options": {
+            "a": "I/O & OS Burst",
+            "b": "CPU & I/O Burst",
+            "c": "Memory & I/O Burst",
+            "d": "OS & Memory Burst"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "An I/O bound program will typically have ____________",
+        "options": {
+            "a": "a few very short CPU bursts",
+            "b": "many very short I/O bursts",
+            "c": "many very short CPU bursts",
+            "d": "a few very short I/O bursts"
+        },
+        "answer": "c",
+        "explanation": "An I/O bound program frequently performs short computations (short CPU bursts) followed by waiting for I/O operations to complete."
+    },
+    {
+        "id": 5,
+        "question": "A process is selected from the ______ queue by the ________ scheduler, to be executed.",
+        "options": {
+            "a": "blocked, short term",
+            "b": "wait, long term",
+            "c": "ready, short term",
+            "d": "ready, long term"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "In the following cases non – preemptive scheduling occurs?",
+        "options": {
+            "a": "When a process switches from the running state to the ready state",
+            "b": "When a process goes from the running state to the waiting state",
+            "c": "When a process switches from the waiting state to the ready state",
+            "d": "All of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "There is no other choice."
+    },
+    {
+        "id": 7,
+        "question": "The switching of the CPU from one process or thread to another is called ____________",
+        "options": {
+            "a": "process switch",
+            "b": "task switch",
+            "c": "context switch",
+            "d": "all of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "What is Dispatch latency?",
+        "options": {
+            "a": "the speed of dispatching a process from running to the ready state",
+            "b": "the time of dispatching a process from running to ready state and keeping the CPU idle",
+            "c": "the time to stop one process and start running another one",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "Scheduling is done so as to ____________",
+        "options": {
+            "a": "increase CPU utilization",
+            "b": "decrease CPU utilization",
+            "c": "keep the CPU more idle",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "Scheduling is done so as to ____________",
+        "options": {
+            "a": "increase the throughput",
+            "b": "decrease the throughput",
+            "c": "increase the duration of a specific amount of work",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 11,
+        "question": "What is Turnaround time?",
+        "options": {
+            "a": "the total waiting time for a process to finish execution",
+            "b": "the total time spent in the ready queue",
+            "c": "the total time spent in the running queue",
+            "d": "the total time from the completion till the submission of a process"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 12,
+        "question": "Scheduling is done so as to ____________",
+        "options": {
+            "a": "increase the turnaround time",
+            "b": "decrease the turnaround time",
+            "c": "keep the turnaround time same",
+            "d": "there is no relation between scheduling and turnaround time"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 13,
+        "question": "What is Waiting time?",
+        "options": {
+            "a": "the total time in the blocked and waiting queues",
+            "b": "the total time spent in the ready queue",
+            "c": "the total time spent in the running queue",
+            "d": "the total time from the completion till the submission of a process"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 14,
+        "question": "Scheduling is done so as to ____________",
+        "options": {
+            "a": "increase the waiting time",
+            "b": "keep the waiting time the same",
+            "c": "decrease the waiting time",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 15,
+        "question": "What is Response time?",
+        "options": {
+            "a": "the total time taken from the submission time till the completion time",
+            "b": "the total time taken from the submission time till the first response is produced",
+            "c": "the total time taken from submission time till the response is output",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    }
+]

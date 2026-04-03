@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "question": "What is Address Binding?",
+        "options": {
+            "a": "going to an address in memory",
+            "b": "locating an address with the help of another address",
+            "c": "binding two addresses together to form a new address in a different memory space",
+            "d": "a mapping from one address space to another"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "Binding of instructions and data to memory addresses can be done at ____________",
+        "options": {
+            "a": "Compile time",
+            "b": "Load time",
+            "c": "Execution time",
+            "d": "All of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "If the process can be moved during its execution from one memory segment to another, then binding must be ____________",
+        "options": {
+            "a": "delayed until run time",
+            "b": "preponed to compile time",
+            "c": "preponed to load time",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "What is Dynamic loading?",
+        "options": {
+            "a": "loading multiple routines dynamically",
+            "b": "loading a routine only when it is called",
+            "c": "loading multiple routines randomly",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "What is the advantage of dynamic loading?",
+        "options": {
+            "a": "A used routine is used multiple times",
+            "b": "An unused routine is never loaded",
+            "c": "CPU utilization increases",
+            "d": "All of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "The idea of overlays is to ____________",
+        "options": {
+            "a": "data that are needed at any given time",
+            "b": "enable a process to be larger than the amount of memory allocated to it",
+            "c": "keep in memory only those instructions",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "The ___________ must design and program the overlay structure.",
+        "options": {
+            "a": "programmer",
+            "b": "system architect",
+            "c": "system designer",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "The ___________ swaps processes in and out of the memory.",
+        "options": {
+            "a": "Memory manager",
+            "b": "CPU",
+            "c": "CPU manager",
+            "d": "User"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "If a higher priority process arrives and wants service, the memory manager can swap out the lower priority process to execute the higher priority process. When the higher priority process finishes, the lower priority process is swapped back in and continues execution. This variant of swapping is sometimes called?",
+        "options": {
+            "a": "priority swapping",
+            "b": "pull out, push in",
+            "c": "roll out, roll in",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "If binding is done at assembly or load time, then the process _____ be moved to different locations after being swapped out and in again.",
+        "options": {
+            "a": "can",
+            "b": "must",
+            "c": "can never",
+            "d": "may"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 11,
+        "question": "In a system that does not support swapping ____________",
+        "options": {
+            "a": "the compiler normally binds symbolic addresses (variables) to relocatable addresses",
+            "b": "the compiler normally binds symbolic addresses to physical addresses",
+            "c": "the loader binds relocatable addresses to physical addresses",
+            "d": "binding of symbolic addresses to physical addresses normally takes place during execution"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 12,
+        "question": "Which of the following is TRUE?",
+        "options": {
+            "a": "Overlays are used to increase the size of physical memory",
+            "b": "Overlays are used to increase the logical address space",
+            "c": "When overlays are used, the size of a process is not limited to the size of the physical memory",
+            "d": "Overlays are used whenever the physical address space is smaller than the logical address space"
+        },
+        "answer": "c",
+        "explanation": "None."
+    }
+]

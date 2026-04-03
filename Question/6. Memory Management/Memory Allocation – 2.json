@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "question": "In internal fragmentation, memory is internal to a partition and ____________",
+        "options": {
+            "a": "is being used",
+            "b": "is not being used",
+            "c": "is always used",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "A solution to the problem of external fragmentation is ____________",
+        "options": {
+            "a": "compaction",
+            "b": "larger memory space",
+            "c": "smaller memory space",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "Another solution to the problem of external fragmentation problem is to ____________",
+        "options": {
+            "a": "permit the logical address space of a process to be noncontiguous",
+            "b": "permit smaller processes to be allocated memory at last",
+            "c": "permit larger processes to be allocated memory at last",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "If relocation is static and is done at assembly or load time, compaction _________",
+        "options": {
+            "a": "cannot be done",
+            "b": "must be done",
+            "c": "must not be done",
+            "d": "can be done"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "The disadvantage of moving all process to one end of memory and all holes to the other direction, producing one large hole of available memory is ____________",
+        "options": {
+            "a": "the cost incurred",
+            "b": "the memory used",
+            "c": "the CPU used",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "__________ is generally faster than _________ and _________",
+        "options": {
+            "a": "first fit, best fit, worst fit",
+            "b": "best fit, first fit, worst fit",
+            "c": "worst fit, best fit, first fit",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "External fragmentation exists when?",
+        "options": {
+            "a": "enough total memory exists to satisfy a request but it is not contiguous",
+            "b": "the total memory is insufficient to satisfy a request",
+            "c": "a request cannot be satisfied even when the total memory is free",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "External fragmentation will not occur when?",
+        "options": {
+            "a": "first fit is used",
+            "b": "best fit is used",
+            "c": "worst fit is used",
+            "d": "no matter which algorithm is used, it will always occur"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "Sometimes the overhead of keeping track of a hole might be ____________",
+        "options": {
+            "a": "larger than the memory",
+            "b": "larger than the hole itself",
+            "c": "very small",
+            "d": "all of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "When the memory allocated to a process is slightly larger than the process, then ____________",
+        "options": {
+            "a": "internal fragmentation occurs",
+            "b": "external fragmentation occurs",
+            "c": "both internal and external fragmentation occurs",
+            "d": "neither internal nor external fragmentation occurs"
+        },
+        "answer": "a",
+        "explanation": "None."
+    }
+]

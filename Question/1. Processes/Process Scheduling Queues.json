@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "question": "Which of the following do not belong to queues for processes?",
+        "options": {
+            "a": "Job Queue",
+            "b": "PCB queue",
+            "c": "Device Queue",
+            "d": "Ready Queue"
+        },
+        "answer": "b",
+        "explanation": "PCB queue does not belong to queues for processes. PCB is a process control block which contains information related to process. Each process is represented by PCB."
+    },
+    {
+        "id": 2,
+        "question": "When the process issues an I/O request __________",
+        "options": {
+            "a": "It is placed in an I/O queue",
+            "b": "It is placed in a waiting queue",
+            "c": "It is placed in the ready queue",
+            "d": "It is placed in the Job queue"
+        },
+        "answer": "a",
+        "explanation": "When the process issues an I/O request it is placed in an I/O queue. I/O is a resource and it should be used effectively and every process should get access to it. There might be multiple processes which requested for I/O. Depending on scheduling algorithm I/O is allocated to any particular process and after completing I/O operation, I/O access is returned to the OS."
+    },
+    {
+        "id": 3,
+        "question": "What will happen when a process terminates?",
+        "options": {
+            "a": "It is removed from all queues",
+            "b": "It is removed from all, but the job queue",
+            "c": "Its process control block is de-allocated",
+            "d": "Its process control block is never de-allocated"
+        },
+        "answer": "a",
+        "explanation": "When a process terminates, it removes from all queues. All allocated resources to that particular process are deallocated and all those resources are returned back to OS."
+    },
+    {
+        "id": 4,
+        "question": "What is a long-term scheduler?",
+        "options": {
+            "a": "It selects processes which have to be brought into the ready queue",
+            "b": "It selects processes which have to be executed next and allocates CPU",
+            "c": "It selects processes which heave to remove from memory by swapping",
+            "d": "None of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "A long-term scheduler selects processes which have to be brought into the ready queue. When processes enter the system, they are put in the job queue. Long-term scheduler selects processes from the job queue and puts them in the ready queue. It is also known as Job Scheduler."
+    },
+    {
+        "id": 5,
+        "question": "If all processes I/O bound, the ready queue will almost always be ______ and the Short term Scheduler will have a ______ to do.",
+        "options": {
+            "a": "full, little",
+            "b": "full, lot",
+            "c": "empty, little",
+            "d": "empty, lot"
+        },
+        "answer": "c",
+        "explanation": "If all processes are I/O bound, the ready queue will almost empty and the short-term scheduler will have a little to do. I/O bound processes spend more time doing I/O than computation."
+    },
+    {
+        "id": 6,
+        "question": "What is a medium-term scheduler?",
+        "options": {
+            "a": "It selects which process has to be brought into the ready queue",
+            "b": "It selects which process has to be executed next and allocates CPU",
+            "c": "It selects which process to remove from memory by swapping",
+            "d": "None of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "A medium-term scheduler selects which process to remove from memory by swapping. The medium-term scheduler swapped out the process and later swapped in. Swapping helps to free up memory."
+    },
+    {
+        "id": 7,
+        "question": "What is a short-term scheduler?",
+        "options": {
+            "a": "It selects which process has to be brought into the ready queue",
+            "b": "It selects which process has to be executed next and allocates CPU",
+            "c": "It selects which process to remove from memory by swapping",
+            "d": "None of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "A short-term scheduler selects a process which has to be executed next and allocates CPU. Short-term scheduler selects a process from the ready queue. It selects processes frequently."
+    },
+    {
+        "id": 8,
+        "question": "The primary distinction between the short term scheduler and the long term scheduler is __________",
+        "options": {
+            "a": "The length of their queues",
+            "b": "The type of processes they schedule",
+            "c": "The frequency of their execution",
+            "d": "None of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "The primary distinction between the short-term scheduler and the long-term scheduler is the frequency of their execution. The short-term scheduler executes frequently while the long-term scheduler executes much less frequently."
+    },
+    {
+        "id": 9,
+        "question": "The only state transition that is initiated by the user process itself is __________",
+        "options": {
+            "a": "block",
+            "b": "wakeup",
+            "c": "dispatch",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "The only state transition that is initiated by the user process itself is block. Whenever a user process initiates an I/O request it goes into block state unless and until the I/O request is not completed."
+    },
+    {
+        "id": 10,
+        "question": "In a time-sharing operating system, when the time slot given to a process is completed, the process goes from the running state to the __________",
+        "options": {
+            "a": "Blocked state",
+            "b": "Ready state",
+            "c": "Suspended state",
+            "d": "Terminated state"
+        },
+        "answer": "b",
+        "explanation": "In a time-sharing operating system, when the time slot given to a process is completed, the process goes from the running state to the Ready State. In a time-sharing operating system unit time is defined for sharing CPU, it is called a time quantum or time slice. If a process takes less than 1 time quantum, then the process itself releases the CPU."
+    },
+    {
+        "id": 11,
+        "question": "In a multiprogramming environment __________",
+        "options": {
+            "a": "the processor executes more than one process at a time",
+            "b": "the programs are developed by more than one person",
+            "c": "more than one process resides in the memory",
+            "d": "a single user can execute many programs at the same time"
+        },
+        "answer": "c",
+        "explanation": "In a multiprogramming environment more than one process resides in the memory. Whenever a CPU is available, one process amongst all present in memory gets the CPU for execution. Multiprogramming increases CPU utilization."
+    },
+    {
+        "id": 12,
+        "question": "Suppose that a process is in “Blocked” state waiting for some I/O service. When the service is completed, it goes to the __________",
+        "options": {
+            "a": "Running state",
+            "b": "Ready state",
+            "c": "Suspended state",
+            "d": "Terminated state"
+        },
+        "answer": "b",
+        "explanation": "Suppose that a process is in “Blocked” state waiting for some I/O service. When the service is completed, it goes to the ready state. Process never goes directly to the running state from the waiting state. Only processes which are in ready state go to the running state whenever CPU allocated by operating system."
+    },
+    {
+        "id": 13,
+        "question": "The context of a process in the PCB of a process does not contain __________",
+        "options": {
+            "a": "the value of the CPU registers",
+            "b": "the process state",
+            "c": "memory-management information",
+            "d": "context switch time"
+        },
+        "answer": "d",
+        "explanation": "The context of a process in the PCB of a process does not contain context switch time. When switching CPU from one process to another, the current context of the process needs to be saved. It includes values of the CPU registers, process states, memory-management information."
+    },
+    {
+        "id": 14,
+        "question": "Which of the following need not necessarily be saved on a context switch between processes?",
+        "options": {
+            "a": "General purpose registers",
+            "b": "Translation lookaside buffer",
+            "c": "Program counter",
+            "d": "All of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "Translation Look-aside Buffer (TLB) need not necessarily be saved on a context switch between processes. A special, small, fast-lookup hardware cache is called Translation Look-aside Buffer. TLB used to reduce memory access time."
+    },
+    {
+        "id": 15,
+        "question": "Which of the following does not interrupt a running process?",
+        "options": {
+            "a": "A device",
+            "b": "Timer",
+            "c": "Scheduler process",
+            "d": "Power failure"
+        },
+        "answer": "c",
+        "explanation": "Scheduler process does not interrupt a running process. Scheduler process selects an available process from a pool of available processes and allocates CPU to it."
+    }
+]

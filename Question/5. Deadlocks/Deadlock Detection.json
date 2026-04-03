@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "question": "The wait-for graph is a deadlock detection algorithm that is applicable when ____________",
+        "options": {
+            "a": "all resources have a single instance",
+            "b": "all resources have multiple instances",
+            "c": "all resources have a single 7 multiple instances",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "An edge from process Pi to Pj in a wait for graph indicates that ____________",
+        "options": {
+            "a": "Pi is waiting for Pj to release a resource that Pi needs",
+            "b": "Pj is waiting for Pi to release a resource that Pj needs",
+            "c": "Pi is waiting for Pj to leave the system",
+            "d": "Pj is waiting for Pi to leave the system"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "If the wait for graph contains a cycle ____________",
+        "options": {
+            "a": "then a deadlock does not exist",
+            "b": "then a deadlock exists",
+            "c": "then the system is in a safe state",
+            "d": "either deadlock exists or system is in a safe state"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "If deadlocks occur frequently, the detection algorithm must be invoked ________",
+        "options": {
+            "a": "rarely",
+            "b": "frequently",
+            "c": "rarely & frequently",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "What is the disadvantage of invoking the detection algorithm for every request?",
+        "options": {
+            "a": "overhead of the detection algorithm due to consumption of memory",
+            "b": "excessive time consumed in the request to be allocated memory",
+            "c": "considerable overhead in computation time",
+            "d": "all of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "A deadlock eventually cripples system throughput and will cause the CPU utilization to ______",
+        "options": {
+            "a": "increase",
+            "b": "drop",
+            "c": "stay still",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "Every time a request for allocation cannot be granted immediately, the detection algorithm is invoked. This will help identify ____________",
+        "options": {
+            "a": "the set of processes that have been deadlocked",
+            "b": "the set of processes in the deadlock queue",
+            "c": "the specific process that caused the deadlock",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "A computer system has 6 tape drives, with ‘n’ processes competing for them. Each process may need 3 tape drives. The maximum value of ‘n’ for which the system is guaranteed to be deadlock free is?",
+        "options": {
+            "a": "2",
+            "b": "3",
+            "c": "4",
+            "d": "1"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "A system has 3 processes sharing 4 resources. If each process needs a maximum of 2 units then, deadlock ____________",
+        "options": {
+            "a": "can never occur",
+            "b": "may occur",
+            "c": "has to occur",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "‘m’ processes share ‘n’ resources of the same type. The maximum need of each process doesn’t exceed ‘n’ and the sum of all their maximum needs is always less than m+n. In this setup, deadlock ____________",
+        "options": {
+            "a": "can never occur",
+            "b": "may occur",
+            "c": "has to occur",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    }
+]

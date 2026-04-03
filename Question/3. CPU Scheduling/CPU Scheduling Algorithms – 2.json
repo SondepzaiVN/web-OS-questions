@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "question": "Which is the most optimal scheduling algorithm?",
+        "options": {
+            "a": "FCFS – First come First served",
+            "b": "SJF – Shortest Job First",
+            "c": "RR – Round Robin",
+            "d": "None of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "The real difficulty with SJF in short term scheduling is ____________",
+        "options": {
+            "a": "it is too good an algorithm",
+            "b": "knowing the length of the next CPU request",
+            "c": "it is too complex to understand",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "The FCFS algorithm is particularly troublesome for ____________",
+        "options": {
+            "a": "time sharing systems",
+            "b": "multiprogramming systems",
+            "c": "multiprocessor systems",
+            "d": "operating systems"
+        },
+        "answer": "a",
+        "explanation": "In a time sharing system, each user needs to get a share of the CPU at regular intervals."
+    },
+    {
+        "id": 4,
+        "question": "Preemptive Shortest Job First scheduling is sometimes called ____________",
+        "options": {
+            "a": "Fast SJF scheduling",
+            "b": "EDF scheduling – Earliest Deadline First",
+            "c": "HRRN scheduling – Highest Response Ratio Next",
+            "d": "SRTN scheduling – Shortest Remaining Time Next"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "An SJF algorithm is simply a priority algorithm where the priority is ____________",
+        "options": {
+            "a": "the predicted next CPU burst",
+            "b": "the inverse of the predicted next CPU burst",
+            "c": "the current CPU burst",
+            "d": "anything the user wants"
+        },
+        "answer": "a",
+        "explanation": "The larger the CPU burst, the lower the priority."
+    },
+    {
+        "id": 6,
+        "question": "Choose one of the disadvantages of the priority scheduling algorithm?",
+        "options": {
+            "a": "it schedules in a very complex manner",
+            "b": "its scheduling takes up a lot of time",
+            "c": "it can lead to some low priority process waiting indefinitely for the CPU",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "What is ‘Aging’?",
+        "options": {
+            "a": "keeping track of cache contents",
+            "b": "keeping track of what pages are currently residing in memory",
+            "c": "keeping track of how many times a given page is referenced",
+            "d": "increasing the priority of jobs to ensure termination in a finite time"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "A solution to the problem of indefinite blockage of low – priority processes is ____________",
+        "options": {
+            "a": "Starvation",
+            "b": "Wait queue",
+            "c": "Ready queue",
+            "d": "Aging"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "Which of the following scheduling algorithms gives minimum average waiting time?",
+        "options": {
+            "a": "FCFS",
+            "b": "SJF",
+            "c": "Round – robin",
+            "d": "Priority"
+        },
+        "answer": "b",
+        "explanation": "None."
+    }
+]

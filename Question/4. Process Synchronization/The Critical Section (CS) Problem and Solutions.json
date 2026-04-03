@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "question": "Concurrent access to shared data may result in ____________",
+        "options": {
+            "a": "data consistency",
+            "b": "data insecurity",
+            "c": "data inconsistency",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "A situation where several processes access and manipulate the same data concurrently and the outcome of the execution depends on the particular order in which access takes place is called ____________",
+        "options": {
+            "a": "data consistency",
+            "b": "race condition",
+            "c": "aging",
+            "d": "starvation"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "The segment of code in which the process may change common variables, update tables, write into files is known as ____________",
+        "options": {
+            "a": "program",
+            "b": "critical section",
+            "c": "non – critical section",
+            "d": "synchronizing"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "Which of the following conditions must be satisfied to solve the critical section problem?",
+        "options": {
+            "a": "Mutual Exclusion",
+            "b": "Progress",
+            "c": "Bounded Waiting",
+            "d": "All of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "Mutual exclusion implies that ____________",
+        "options": {
+            "a": "if a process is executing in its critical section, then no other process must be executing in their critical sections",
+            "b": "if a process is executing in its critical section, then other processes must be executing in their critical sections",
+            "c": "if a process is executing in its critical section, then all the resources of the system must be blocked until it finishes execution",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "Bounded waiting implies that there exists a bound on the number of times a process is allowed to enter its critical section ____________",
+        "options": {
+            "a": "after a process has made a request to enter its critical section and before the request is granted",
+            "b": "when another process is in its critical section",
+            "c": "before a process has made a request to enter its critical section",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "A minimum of _____ variable(s) is/are required to be shared between processes to solve the critical section problem.",
+        "options": {
+            "a": "one",
+            "b": "two",
+            "c": "three",
+            "d": "four"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "In the bakery algorithm to solve the critical section problem ____________",
+        "options": {
+            "a": "each process is put into a queue and picked up in an ordered manner",
+            "b": "each process receives a number (may or may not be unique) and the one with the lowest number is served next",
+            "c": "each process gets a unique number and the one with the highest number is served next",
+            "d": "each process gets a unique number and the one with the lowest number is served next"
+        },
+        "answer": "b",
+        "explanation": "None."
+    }
+]

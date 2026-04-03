@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "question": "A Process Control Block(PCB) does not contain which of the following?",
+        "options": {
+            "a": "Code",
+            "b": "Stack",
+            "c": "Bootstrap program",
+            "d": "Data"
+        },
+        "answer": "c",
+        "explanation": "Process Control Block (PCB) contains information related to a process such as Process State, Program Counter, CPU Register, etc. Process Control Block is also known as Task Control Block. Bootstrap program is a program which runs initially when the system or computer is booted or rebooted."
+    },
+    {
+        "id": 2,
+        "question": "The number of processes completed per unit time is known as __________",
+        "options": {
+            "a": "Output",
+            "b": "Throughput",
+            "c": "Efficiency",
+            "d": "Capacity"
+        },
+        "answer": "b",
+        "explanation": "The number of processes completed per unit time is known as Throughput. Suppose there are 4 processes A, B, C & D they are taking 1, 3, 4 & 7 units of time respectively for their executions. For 10 units of time, throughput is high if process A, B & C are running first as 3 processes can execute. If process C runs first then throughput is low as maximum only 2 processes can execute. Throughput is low for processes which take a long time for execution. Throughput is high for processes which take a short time for execution."
+    },
+    {
+        "id": 3,
+        "question": "The state of a process is defined by __________",
+        "options": {
+            "a": "the final activity of the process",
+            "b": "the activity just executed by the process",
+            "c": "the activity to next be executed by the process",
+            "d": "the current activity of the process"
+        },
+        "answer": "d",
+        "explanation": "The state of a process is defined by the current activity of the process. A process state changes when the process executes. The process states are as New, Ready, Running, Wait, Terminated."
+    },
+    {
+        "id": 4,
+        "question": "Which of the following is not the state of a process?",
+        "options": {
+            "a": "New",
+            "b": "Old",
+            "c": "Waiting",
+            "d": "Running"
+        },
+        "answer": "b",
+        "explanation": "There is no process state such as old. When a process is created then the process is in New state. When the process gets the CPU for its execution then the process is in Running state. When the process is waiting for an external event then the process is in a Waiting state."
+    },
+    {
+        "id": 5,
+        "question": "What is a Process Control Block?",
+        "options": {
+            "a": "Process type variable",
+            "b": "Data Structure",
+            "c": "A secondary storage section",
+            "d": "A Block in memory"
+        },
+        "answer": "b",
+        "explanation": "A Process Control Block (PCB) is a data structure. It contains information related to a process such as Process State, Program Counter, CPU Register, etc. Process Control Block is also known as Task Control Block."
+    },
+    {
+        "id": 6,
+        "question": "The entry of all the PCBs of the current processes is in __________",
+        "options": {
+            "a": "Process Register",
+            "b": "Program Counter",
+            "c": "Process Table",
+            "d": "Process Unit"
+        },
+        "answer": "c",
+        "explanation": "The entry of all the PCBs of the current processes is in Process Table. The Process Table has the status of each and every process that is created in OS along with their PIDs."
+    },
+    {
+        "id": 7,
+        "question": "What is the degree of multiprogramming?",
+        "options": {
+            "a": "the number of processes executed per unit time",
+            "b": "the number of processes in the ready queue",
+            "c": "the number of processes in the I/O queue",
+            "d": "the number of processes in memory"
+        },
+        "answer": "d",
+        "explanation": "Multiprogramming means the number of processes are in the ready states. To increase utilization of CPU, Multiprogramming is one of the most important abilities of OS. Generally, a single process cannot use CPU or I/O at all time, whenever CPU or I/O is available another process can use it. By doing this CPU utilization is increased."
+    },
+    {
+        "id": 8,
+        "question": "A single thread of control allows the process to perform __________",
+        "options": {
+            "a": "only one task at a time",
+            "b": "multiple tasks at a time",
+            "c": "only two tasks at a time",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "A single thread of control allows the process to perform only one task at a time. In the case of multi-core, multiple threads can be run simultaneously and can perform multiple tasks at a time."
+    },
+    {
+        "id": 9,
+        "question": "What is the objective of multiprogramming?",
+        "options": {
+            "a": "Have a process running at all time",
+            "b": "Have multiple programs waiting in a queue ready to run",
+            "c": "To increase CPU utilization",
+            "d": "None of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "The objective of multiprogramming is to increase CPU utilization. Generally, a single process cannot use CPU or I/O at all time, whenever CPU or I/O is available another process can use it. Multiprogramming offers this ability to OS by keeping multiple programs in a ready queue."
+    }
+]

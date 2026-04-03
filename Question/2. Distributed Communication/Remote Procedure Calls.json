@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "question": "Remote Procedure Calls are used ____________",
+        "options": {
+            "a": "for communication between two processes remotely different from each other on the same system",
+            "b": "for communication between two processes on the same system",
+            "c": "for communication between two processes on separate systems",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "To differentiate the many network services a system supports ______ are used.",
+        "options": {
+            "a": "Variables",
+            "b": "Sockets",
+            "c": "Ports",
+            "d": "Service names"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "RPC provides a(an) _____ on the client-side, a separate one for each remote procedure.",
+        "options": {
+            "a": "stub",
+            "b": "identifier",
+            "c": "name",
+            "d": "process identifier"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "What is stub?",
+        "options": {
+            "a": "transmits the message to the server where the server side stub receives the message and invokes procedure on the server side",
+            "b": "packs the parameters into a form transmittable over the network",
+            "c": "locates the port on the server",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "To resolve the problem of data representation on different systems RPCs define _____________",
+        "options": {
+            "a": "machine dependent representation of data",
+            "b": "machine representation of data",
+            "c": "machine-independent representation of data",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "What is the full form of RMI?",
+        "options": {
+            "a": "Remote Memory Installation",
+            "b": "Remote Memory Invocation",
+            "c": "Remote Method Installation",
+            "d": "Remote Method Invocation"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "The remote method invocation __________",
+        "options": {
+            "a": "allows a process to invoke memory on a remote object",
+            "b": "allows a thread to invoke a method on a remote object",
+            "c": "allows a thread to invoke memory on a remote object",
+            "d": "allows a process to invoke a method on a remote object"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "A process that is based on IPC mechanism which executes on different systems and can communicate with other processes using message based communication, is called ________",
+        "options": {
+            "a": "Local Procedure Call",
+            "b": "Inter Process Communication",
+            "c": "Remote Procedure Call",
+            "d": "Remote Machine Invocation"
+        },
+        "answer": "c",
+        "explanation": "None."
+    }
+]

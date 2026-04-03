@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "question": "A collection of instructions that performs a single logical function is called ____________",
+        "options": {
+            "a": "transaction",
+            "b": "operation",
+            "c": "function",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "A terminated transaction that has completed its execution successfully is ____________ otherwise it is __________",
+        "options": {
+            "a": "committed, destroyed",
+            "b": "aborted, destroyed",
+            "c": "committed, aborted",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "The state of the data accessed by an aborted transaction must be restored to what it was just before the transaction started executing. This restoration is known as ________ of transaction.",
+        "options": {
+            "a": "safety",
+            "b": "protection",
+            "c": "roll – back",
+            "d": "revert – back"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "Write ahead logging is a way ____________",
+        "options": {
+            "a": "to ensure atomicity",
+            "b": "to keep data consistent",
+            "c": "that records data on stable storage",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "In the write ahead logging a _____________ is maintained.",
+        "options": {
+            "a": "a memory",
+            "b": "a system",
+            "c": "a disk",
+            "d": "a log record"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "An actual update is not allowed to a data item ____________",
+        "options": {
+            "a": "before the corresponding log record is written out to stable storage",
+            "b": "after the corresponding log record is written out to stable storage",
+            "c": "until the whole log record has been checked for inconsistencies",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "The undo and redo operations must be _________ to guarantee correct behaviour, even if a failure occurs during recovery process.",
+        "options": {
+            "a": "idempotent",
+            "b": "easy",
+            "c": "protected",
+            "d": "all of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "Idempotent – Multiple executions of an operation have the same result as does one execution."
+    },
+    {
+        "id": 8,
+        "question": "The system periodically performs checkpoints that consists of the following operation(s) ____________",
+        "options": {
+            "a": "Putting all the log records currently in main memory onto stable storage",
+            "b": "putting all modified data residing in main memory onto stable storage",
+            "c": "putting a log record onto stable storage",
+            "d": "all of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "Consider a transaction T1 that committed prior to checkpoint. The <T1 commits> record appears in the log before the <checkpoint> record. Any modifications made by T1 must have been written to the stable storage either with the checkpoint or prior to it. Thus at recovery time ____________",
+        "options": {
+            "a": "There is a need to perform an undo operation on T1",
+            "b": "There is a need to perform a redo operation on T1",
+            "c": "There is no need to perform an undo and redo operation on T1",
+            "d": "All of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "Serializable schedules are ones where ____________",
+        "options": {
+            "a": "concurrent execution of transactions is equivalent to the transactions executed serially",
+            "b": "the transactions can be carried out one after the other",
+            "c": "a valid result occurs after execution transactions",
+            "d": "none of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 11,
+        "question": "A locking protocol is one that ____________",
+        "options": {
+            "a": "governs how locks are acquired",
+            "b": "governs how locks are released",
+            "c": "governs how locks are acquired and released",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 12,
+        "question": "The two phase locking protocol consists of ____________",
+        "options": {
+            "a": "growing & shrinking phase",
+            "b": "shrinking & creation phase",
+            "c": "creation & growing phase",
+            "d": "destruction & creation phase"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 13,
+        "question": "The growing phase is a phase in which?",
+        "options": {
+            "a": "A transaction may obtain locks, but does not release any",
+            "b": "A transaction may obtain locks, and releases a few or all of them",
+            "c": "A transaction may release locks, but does not obtain any new locks",
+            "d": "A transaction may release locks, and does obtain new locks"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 14,
+        "question": "The shrinking phase is a phase in which?",
+        "options": {
+            "a": "A transaction may obtain locks, but does not release any",
+            "b": "A transaction may obtain locks, and releases a few or all of them",
+            "c": "A transaction may release locks, but does not obtain any new locks",
+            "d": "A transaction may release locks, and does obtain new locks"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 15,
+        "question": "Which of the following concurrency control protocols ensure both conflict serializability and freedom from deadlock?",
+        "options": {
+            "a": "I only",
+            "b": "II only",
+            "c": "Both I and II",
+            "d": "Neither I nor II"
+        },
+        "answer": "b",
+        "explanation": "None."
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "question": "What will happen if a non-recursive mutex is locked more than once?",
+        "options": {
+            "a": "Starvation",
+            "b": "Deadlock",
+            "c": "Aging",
+            "d": "Signaling"
+        },
+        "answer": "b",
+        "explanation": "If a thread which had already locked a mutex, tries to lock the mutex again, it will enter into the waiting list of that mutex, which results in a deadlock. It is because no other thread can unlock the mutex."
+    },
+    {
+        "id": 2,
+        "question": "What is a semaphore?",
+        "options": {
+            "a": "is a binary mutex",
+            "b": "must be accessed from only one process",
+            "c": "can be accessed from multiple processes",
+            "d": "none of the mentioned"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "What are the two kinds of semaphores?",
+        "options": {
+            "a": "mutex & counting",
+            "b": "binary & counting",
+            "c": "counting & decimal",
+            "d": "decimal & binary"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "What is a mutex?",
+        "options": {
+            "a": "is a binary mutex",
+            "b": "must be accessed from only one process",
+            "c": "can be accessed from multiple processes",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "At a particular time of computation the value of a counting semaphore is 7.Then 20 P operations and 15 V operations were completed on this semaphore. The resulting value of the semaphore is? (GATE 1987)",
+        "options": {
+            "a": "42",
+            "b": "2",
+            "c": "7",
+            "d": "12"
+        },
+        "answer": "b",
+        "explanation": "P represents Wait and V represents Signal. P operation will decrease the value by 1 every time and V operation will increase the value by 1 every time."
+    },
+    {
+        "id": 6,
+        "question": "A binary semaphore is a semaphore with integer values ____________",
+        "options": {
+            "a": "1",
+            "b": "-1",
+            "c": "0.8",
+            "d": "0.5"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "Semaphores are mostly used to implement ____________",
+        "options": {
+            "a": "System calls",
+            "b": "IPC mechanisms",
+            "c": "System protection",
+            "d": "None of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "Spinlocks are intended to provide __________ only.",
+        "options": {
+            "a": "Mutual Exclusion",
+            "b": "Bounded Waiting",
+            "c": "Aging",
+            "d": "Progress"
+        },
+        "answer": "b",
+        "explanation": "None."
+    }
+]

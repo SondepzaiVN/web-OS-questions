@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "question": "The initial program that is run when the computer is powered up is called __________",
+        "options": {
+            "a": "boot program",
+            "b": "bootloader",
+            "c": "initializer",
+            "d": "bootstrap program"
+        },
+        "answer": "d",
+        "explanation": "None."
+    },
+    {
+        "id": 2,
+        "question": "How does the software trigger an interrupt?",
+        "options": {
+            "a": "Sending signals to CPU through bus",
+            "b": "Executing a special operation called system call",
+            "c": "Executing a special program called system program",
+            "d": "Executing a special program called interrupt trigger program"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 3,
+        "question": "What is a trap/exception?",
+        "options": {
+            "a": "hardware generated interrupt caused by an error",
+            "b": "software generated interrupt caused by an error",
+            "c": "user generated interrupt caused by an error",
+            "d": "none of the mentioned"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 4,
+        "question": "What is an ISR?",
+        "options": {
+            "a": "Information Service Request",
+            "b": "Interrupt Service Request",
+            "c": "Interrupt Service Routine",
+            "d": "Information Service Routine"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 5,
+        "question": "What is an interrupt vector?",
+        "options": {
+            "a": "It is an address that is indexed to an interrupt handler",
+            "b": "It is a unique device number that is indexed by an address",
+            "c": "It is a unique identity given to an interrupt",
+            "d": "None of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 6,
+        "question": "DMA is used for __________",
+        "options": {
+            "a": "High speed devices(disks and communications network)",
+            "b": "Low speed devices",
+            "c": "Utilizing CPU cycles",
+            "d": "All of the mentioned"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 7,
+        "question": "In a memory mapped input/output __________",
+        "options": {
+            "a": "the CPU uses polling to watch the control bit constantly, looping to see if a device is ready",
+            "b": "the CPU writes one data byte to the data register and sets a bit in control register to show that a byte is available",
+            "c": "the CPU receives an interrupt when the device is ready for the next byte",
+            "d": "the CPU runs a user written code and does accordingly"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 8,
+        "question": "In a programmed input/output(PIO) __________",
+        "options": {
+            "a": "the CPU uses polling to watch the control bit constantly, looping to see if a device is ready",
+            "b": "the CPU writes one data byte to the data register and sets a bit in control register to show that a byte is available",
+            "c": "the CPU receives an interrupt when the device is ready for the next byte",
+            "d": "the CPU runs a user written code and does accordingly"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 9,
+        "question": "In an interrupt driven input/output __________",
+        "options": {
+            "a": "the CPU uses polling to watch the control bit constantly, looping to see if a device is ready",
+            "b": "the CPU writes one data byte to the data register and sets a bit in control register to show that a byte is available",
+            "c": "the CPU receives an interrupt when the device is ready for the next byte",
+            "d": "the CPU runs a user written code and does accordingly"
+        },
+        "answer": "c",
+        "explanation": "None."
+    },
+    {
+        "id": 10,
+        "question": "In the layered approach of Operating Systems __________",
+        "options": {
+            "a": "Bottom Layer(0) is the User interface",
+            "b": "Highest Layer(N) is the User interface",
+            "c": "Bottom Layer(N) is the hardware",
+            "d": "Highest Layer(N) is the hardware"
+        },
+        "answer": "b",
+        "explanation": "None."
+    },
+    {
+        "id": 11,
+        "question": "How does the Hardware trigger an interrupt?",
+        "options": {
+            "a": "Sending signals to CPU through a system bus",
+            "b": "Executing a special program called interrupt program",
+            "c": "Executing a special program called system program",
+            "d": "Executing a special operation called system call"
+        },
+        "answer": "a",
+        "explanation": "None."
+    },
+    {
+        "id": 12,
+        "question": "Which operation is performed by an interrupt handler?",
+        "options": {
+            "a": "Saving the current state of the system",
+            "b": "Loading the interrupt handling code and executing it",
+            "c": "Once done handling, bringing back the system to the original state it was before the interrupt occurred",
+            "d": "All of the mentioned"
+        },
+        "answer": "d",
+        "explanation": "None."
+    }
+]
