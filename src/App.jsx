@@ -69,15 +69,29 @@ const buildQuestionSet = (topics, desiredCount) => {
   const picked = topics.flatMap((topic, index) => {
     const list = shuffle(topic.questions).slice(0, counts[index]);
     return list.map((item, itemIndex) => {
-      const options = Object.entries(item.options || {}).map(([key, text]) => ({
-        key,
-        text,
+      const originalOptions = ["a", "b", "c", "d"]
+        .filter((key) =>
+          Object.prototype.hasOwnProperty.call(item.options || {}, key),
+        )
+        .map((key) => ({
+          originalKey: key,
+          text: item.options[key],
+        }));
+      const shuffled = shuffle(originalOptions);
+      const labelOrder = ["a", "b", "c", "d"];
+      const options = shuffled.map((option, index) => ({
+        key: labelOrder[index],
+        text: option.text,
+        originalKey: option.originalKey,
       }));
+      const mappedAnswer =
+        options.find((option) => option.originalKey === item.answer)?.key ??
+        item.answer;
       return {
         id: `${topic.id}-${item.id ?? itemIndex}`,
         question: item.question,
-        options: shuffle(options),
-        answer: item.answer,
+        options,
+        answer: mappedAnswer,
         explanation: item.explanation,
         chapter: topic.chapter,
         topic: topic.topic,
@@ -223,12 +237,10 @@ function App() {
 
   const handleNext = () => {
     setCurrentIndex((prev) => Math.min(prev + 1, lastIndex));
-    setShowReview(false);
   };
 
   const handlePrev = () => {
     setCurrentIndex((prev) => Math.max(prev - 1, 0));
-    setShowReview(false);
   };
 
   return (
