@@ -202,7 +202,7 @@ function App() {
   };
 
   const handleSelect = (questionIndex, optionKey) => {
-    if (isReview || phase !== "quiz") {
+    if (isReview || phase !== "quiz" || answers[questionIndex]) {
       return;
     }
     setAnswers((prev) => ({
@@ -387,7 +387,7 @@ function App() {
                           isCorrect ? "correct" : ""
                         } ${isWrong ? "wrong" : ""}`}
                         onClick={() => handleSelect(currentIndex, option.key)}
-                        disabled={isReview}
+                        disabled={isReview || Boolean(selectedAnswer)}
                       >
                         <span className="opt-key">
                           {option.key.toUpperCase()}
