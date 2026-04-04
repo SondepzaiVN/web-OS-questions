@@ -104,6 +104,7 @@ const buildQuestionSet = (topics, desiredCount) => {
 
 // LocalStorage helpers
 const HISTORY_KEY = "quiz_history";
+const QUIZ_DRAFT_KEY = "quiz_draft";
 
 const loadHistory = () => {
   try {
@@ -119,6 +120,38 @@ const saveHistory = (history) => {
     localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   } catch {
     console.warn("Không thể lưu lịch sử vào localStorage");
+  }
+};
+
+const loadQuizDraft = () => {
+  try {
+    const raw = localStorage.getItem(QUIZ_DRAFT_KEY);
+    if (!raw) {
+      return null;
+    }
+    const parsed = JSON.parse(raw);
+    if (!parsed || !Array.isArray(parsed.quizQuestions)) {
+      return null;
+    }
+    return parsed;
+  } catch {
+    return null;
+  }
+};
+
+const saveQuizDraft = (draft) => {
+  try {
+    localStorage.setItem(QUIZ_DRAFT_KEY, JSON.stringify(draft));
+  } catch {
+    console.warn("Không thể lưu tiến độ làm bài");
+  }
+};
+
+const clearQuizDraft = () => {
+  try {
+    localStorage.removeItem(QUIZ_DRAFT_KEY);
+  } catch {
+    console.warn("Không thể xóa tiến độ làm bài");
   }
 };
 
@@ -231,6 +264,76 @@ function App() {
   }, [answers]);
 
   useEffect(() => {
+    const draft = loadQuizDraft();
+    if (!draft || !draft.quizQuestions?.length) {
+      return;
+    }
+
+    const restoredIndex = clamp(
+      Number(draft.currentIndex) || 0,
+      0,
+      Math.max(draft.quizQuestions.length - 1, 0),
+    );
+
+    setSelectedTopics(
+      Array.isArray(draft.selectedTopics) && draft.selectedTopics.length
+        ? draft.selectedTopics
+        : topics.map((topic) => topic.id),
+    );
+    setQuestionCount(
+      clamp(
+        Number(draft.questionCount) || draft.quizQuestions.length,
+        1,
+        Math.max(draft.quizQuestions.length, 1),
+      ),
+    );
+    setQuizQuestions(draft.quizQuestions);
+    setAnswers(
+      draft.answers && typeof draft.answers === "object" ? draft.answers : {},
+    );
+    setRemainingSeconds(Math.max(Number(draft.remainingSeconds) || 0, 0));
+    setTimeUp(Boolean(draft.timeUp));
+    setShowReview(Boolean(draft.showReview));
+    setCurrentIndex(restoredIndex);
+    setReviewFilter(
+      ["all", "correct", "wrong"].includes(draft.reviewFilter)
+        ? draft.reviewFilter
+        : "all",
+    );
+    setPhase("quiz");
+  }, [topics]);
+
+  useEffect(() => {
+    if (phase !== "quiz" || !quizQuestions.length) {
+      return;
+    }
+
+    saveQuizDraft({
+      phase,
+      selectedTopics,
+      questionCount,
+      quizQuestions,
+      answers,
+      remainingSeconds,
+      timeUp,
+      showReview,
+      currentIndex,
+      reviewFilter,
+    });
+  }, [
+    phase,
+    selectedTopics,
+    questionCount,
+    quizQuestions,
+    answers,
+    remainingSeconds,
+    timeUp,
+    showReview,
+    currentIndex,
+    reviewFilter,
+  ]);
+
+  useEffect(() => {
     if (phase !== "quiz") {
       return undefined;
     }
@@ -322,6 +425,7 @@ function App() {
     setReviewFilter("all");
     setSelectedHistoryItem(null);
     hasSavedRef.current = false;
+    clearQuizDraft();
   };
 
   const handleViewHistoryDetail = (item) => {
