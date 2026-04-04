@@ -166,21 +166,84 @@ const formatDate = (timestamp) => {
   });
 };
 
+const renderQuestionContent = (text) => {
+  if (!text) {
+    return null;
+  }
+  const [body, note] = String(text).split(/\n---\n/);
+  const [main, ...rest] = body.split(/\n\s*\n/);
+  const block = rest.join("\n\n");
+  return (
+    <>
+      <p className="question-main">{main}</p>
+      {block && (
+        <pre className="question-block">
+          <code>{block}</code>
+        </pre>
+      )}
+      {note && <p className="question-note">{note}</p>}
+    </>
+  );
+};
+
 function App() {
   const topics = useMemo(() => buildTopics(), []);
-  const [selectedTopics, setSelectedTopics] = useState(() =>
-    topics.map((topic) => topic.id),
+  const initialDraft = useMemo(() => loadQuizDraft(), []);
+  const initialQuizQuestions = useMemo(() => {
+    if (!initialDraft || !Array.isArray(initialDraft.quizQuestions)) {
+      return [];
+    }
+    return initialDraft.quizQuestions;
+  }, [initialDraft]);
+
+  const [selectedTopics, setSelectedTopics] = useState(() => {
+    if (
+      Array.isArray(initialDraft?.selectedTopics) &&
+      initialDraft.selectedTopics.length
+    ) {
+      return initialDraft.selectedTopics;
+    }
+    return topics.map((topic) => topic.id);
+  });
+  const [questionCount, setQuestionCount] = useState(() => {
+    if (initialQuizQuestions.length) {
+      return clamp(
+        Number(initialDraft?.questionCount) || initialQuizQuestions.length,
+        1,
+        Math.max(initialQuizQuestions.length, 1),
+      );
+    }
+    return 30;
+  });
+  const [phase, setPhase] = useState(() =>
+    initialQuizQuestions.length ? "quiz" : "setup",
+  ); // "setup", "quiz", "history", "history-detail"
+  const [quizQuestions, setQuizQuestions] = useState(
+    () => initialQuizQuestions,
   );
-  const [questionCount, setQuestionCount] = useState(30);
-  const [phase, setPhase] = useState("setup"); // "setup", "quiz", "history", "history-detail"
-  const [quizQuestions, setQuizQuestions] = useState([]);
-  const [answers, setAnswers] = useState({});
-  const [remainingSeconds, setRemainingSeconds] = useState(0);
-  const [timeUp, setTimeUp] = useState(false);
-  const [showReview, setShowReview] = useState(false);
+  const [answers, setAnswers] = useState(() =>
+    initialDraft && typeof initialDraft.answers === "object"
+      ? initialDraft.answers
+      : {},
+  );
+  const [remainingSeconds, setRemainingSeconds] = useState(() =>
+    Math.max(Number(initialDraft?.remainingSeconds) || 0, 0),
+  );
+  const [timeUp, setTimeUp] = useState(() => Boolean(initialDraft?.timeUp));
+  const [showReview, setShowReview] = useState(() =>
+    Boolean(initialDraft?.showReview),
+  );
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [reviewFilter, setReviewFilter] = useState("all"); // "all", "correct", "wrong"
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    const maxIndex = Math.max(initialQuizQuestions.length - 1, 0);
+    const rawIndex = Number(initialDraft?.currentIndex) || 0;
+    return clamp(rawIndex, 0, maxIndex);
+  });
+  const [reviewFilter, setReviewFilter] = useState(() =>
+    ["all", "correct", "wrong"].includes(initialDraft?.reviewFilter)
+      ? initialDraft.reviewFilter
+      : "all",
+  ); // "all", "correct", "wrong"
   const [history, setHistory] = useState(() => loadHistory());
   const [selectedHistoryItem, setSelectedHistoryItem] = useState(null);
   const hasSavedRef = useRef(false);
@@ -262,46 +325,6 @@ function App() {
   useEffect(() => {
     answersRef.current = answers;
   }, [answers]);
-
-  useEffect(() => {
-    const draft = loadQuizDraft();
-    if (!draft || !draft.quizQuestions?.length) {
-      return;
-    }
-
-    const restoredIndex = clamp(
-      Number(draft.currentIndex) || 0,
-      0,
-      Math.max(draft.quizQuestions.length - 1, 0),
-    );
-
-    setSelectedTopics(
-      Array.isArray(draft.selectedTopics) && draft.selectedTopics.length
-        ? draft.selectedTopics
-        : topics.map((topic) => topic.id),
-    );
-    setQuestionCount(
-      clamp(
-        Number(draft.questionCount) || draft.quizQuestions.length,
-        1,
-        Math.max(draft.quizQuestions.length, 1),
-      ),
-    );
-    setQuizQuestions(draft.quizQuestions);
-    setAnswers(
-      draft.answers && typeof draft.answers === "object" ? draft.answers : {},
-    );
-    setRemainingSeconds(Math.max(Number(draft.remainingSeconds) || 0, 0));
-    setTimeUp(Boolean(draft.timeUp));
-    setShowReview(Boolean(draft.showReview));
-    setCurrentIndex(restoredIndex);
-    setReviewFilter(
-      ["all", "correct", "wrong"].includes(draft.reviewFilter)
-        ? draft.reviewFilter
-        : "all",
-    );
-    setPhase("quiz");
-  }, [topics]);
 
   useEffect(() => {
     if (phase !== "quiz" || !quizQuestions.length) {
@@ -675,7 +698,9 @@ function App() {
                   className={`review-item ${item.isCorrect ? "review-correct" : "review-wrong"}`}
                 >
                   <p className="review-index">Câu {index + 1}</p>
-                  <p className="review-question">{item.question}</p>
+                  <div className="review-question">
+                    {renderQuestionContent(item.question)}
+                  </div>
                   <p
                     className={`review-answer ${item.isCorrect ? "correct" : "wrong"}`}
                   >
@@ -745,7 +770,9 @@ function App() {
                     {currentQuestion.chapter} / {currentQuestion.topic}
                   </span>
                 </div>
-                <h3>{currentQuestion.question}</h3>
+                <div className="question-text">
+                  {renderQuestionContent(currentQuestion.question)}
+                </div>
                 <div className="options">
                   {currentQuestion.options.map((option) => {
                     const selectedAnswer = answers[currentIndex];
@@ -895,7 +922,9 @@ function App() {
                       className={`review-item ${isCorrect ? "review-correct" : "review-wrong"}`}
                     >
                       <p className="review-index">Câu {index + 1}</p>
-                      <p className="review-question">{item.question}</p>
+                      <div className="review-question">
+                        {renderQuestionContent(item.question)}
+                      </div>
                       <p
                         className={`review-answer ${isCorrect ? "correct" : "wrong"}`}
                       >

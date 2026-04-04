@@ -1,98 +1,122 @@
 [
-    {
-        "id": 1,
-        "question": "What will happen if a non-recursive mutex is locked more than once?",
-        "options": {
-            "a": "Starvation",
-            "b": "Deadlock",
-            "c": "Aging",
-            "d": "Signaling"
-        },
-        "answer": "b",
-        "explanation": "If a thread which had already locked a mutex, tries to lock the mutex again, it will enter into the waiting list of that mutex, which results in a deadlock. It is because no other thread can unlock the mutex."
+  {
+    "id": 1,
+    "question": "What will happen if a non-recursive mutex is locked more than once?",
+    "options": {
+      "a": "Starvation",
+      "b": "Deadlock",
+      "c": "Aging",
+      "d": "Signaling"
     },
-    {
-        "id": 2,
-        "question": "What is a semaphore?",
-        "options": {
-            "a": "is a binary mutex",
-            "b": "must be accessed from only one process",
-            "c": "can be accessed from multiple processes",
-            "d": "none of the mentioned"
-        },
-        "answer": "c",
-        "explanation": "None."
+    "answer": "b",
+    "explanation": "If a thread which had already locked a mutex, tries to lock the mutex again, it will enter into the waiting list of that mutex, which results in a deadlock. It is because no other thread can unlock the mutex."
+  },
+  {
+    "id": 2,
+    "question": "What is a semaphore?",
+    "options": {
+      "a": "is a binary mutex",
+      "b": "must be accessed from only one process",
+      "c": "can be accessed from multiple processes",
+      "d": "none of the mentioned"
     },
-    {
-        "id": 3,
-        "question": "What are the two kinds of semaphores?",
-        "options": {
-            "a": "mutex & counting",
-            "b": "binary & counting",
-            "c": "counting & decimal",
-            "d": "decimal & binary"
-        },
-        "answer": "b",
-        "explanation": "None."
+    "answer": "c",
+    "explanation": "None."
+  },
+  {
+    "id": 3,
+    "question": "What are the two kinds of semaphores?",
+    "options": {
+      "a": "mutex & counting",
+      "b": "binary & counting",
+      "c": "counting & decimal",
+      "d": "decimal & binary"
     },
-    {
-        "id": 4,
-        "question": "What is a mutex?",
-        "options": {
-            "a": "is a binary mutex",
-            "b": "must be accessed from only one process",
-            "c": "can be accessed from multiple processes",
-            "d": "none of the mentioned"
-        },
-        "answer": "b",
-        "explanation": "None."
+    "answer": "b",
+    "explanation": "None."
+  },
+  {
+    "id": 4,
+    "question": "What is a mutex?",
+    "options": {
+      "a": "is a binary mutex",
+      "b": "must be accessed from only one process",
+      "c": "can be accessed from multiple processes",
+      "d": "none of the mentioned"
     },
-    {
-        "id": 5,
-        "question": "At a particular time of computation the value of a counting semaphore is 7.Then 20 P operations and 15 V operations were completed on this semaphore. The resulting value of the semaphore is? (GATE 1987)",
-        "options": {
-            "a": "42",
-            "b": "2",
-            "c": "7",
-            "d": "12"
-        },
-        "answer": "b",
-        "explanation": "P represents Wait and V represents Signal. P operation will decrease the value by 1 every time and V operation will increase the value by 1 every time."
+    "answer": "b",
+    "explanation": "None."
+  },
+  {
+    "id": 5,
+    "question": "At a particular time of computation the value of a counting semaphore is 7.Then 20 P operations and 15 V operations were completed on this semaphore. The resulting value of the semaphore is? (GATE 1987)",
+    "options": {
+      "a": "42",
+      "b": "2",
+      "c": "7",
+      "d": "12"
     },
-    {
-        "id": 6,
-        "question": "A binary semaphore is a semaphore with integer values ____________",
-        "options": {
-            "a": "1",
-            "b": "-1",
-            "c": "0.8",
-            "d": "0.5"
-        },
-        "answer": "a",
-        "explanation": "None."
+    "answer": "b",
+    "explanation": "P represents Wait and V represents Signal. P operation will decrease the value by 1 every time and V operation will increase the value by 1 every time."
+  },
+  {
+    "id": 6,
+    "question": "A binary semaphore is a semaphore with integer values ____________",
+    "options": {
+      "a": "1",
+      "b": "-1",
+      "c": "0.8",
+      "d": "0.5"
     },
-    {
-        "id": 7,
-        "question": "Semaphores are mostly used to implement ____________",
-        "options": {
-            "a": "System calls",
-            "b": "IPC mechanisms",
-            "c": "System protection",
-            "d": "None of the mentioned"
-        },
-        "answer": "b",
-        "explanation": "None."
+    "answer": "a",
+    "explanation": "None."
+  },
+  {
+    "id": 7,
+    "question": "Semaphores are mostly used to implement ____________",
+    "options": {
+      "a": "System calls",
+      "b": "IPC mechanisms",
+      "c": "System protection",
+      "d": "None of the mentioned"
     },
-    {
-        "id": 8,
-        "question": "Spinlocks are intended to provide __________ only.",
-        "options": {
-            "a": "Mutual Exclusion",
-            "b": "Bounded Waiting",
-            "c": "Aging",
-            "d": "Progress"
-        },
-        "answer": "b",
-        "explanation": "None."
-    }
+    "answer": "b",
+    "explanation": "None."
+  },
+  {
+    "id": 8,
+    "question": "The program follows to use a shared binary semaphore T.\n\nProcess A\nint Y;\nA1: Y = X*2;\nA2: X = Y;\nsignal(T);\n\nProcess B\nint Z;\nB1: wait(T);\nB2: Z = X+1;\nX = Z;\n\n---\nT is set to 0 before either process begins execution and, as before, X is set to 5. Now, how many different values of X are possible after both processes finish executing?",
+    "options": {
+      "a": "one",
+      "b": "two",
+      "c": "three",
+      "d": "four"
+    },
+    "answer": "a",
+    "explanation": "The semaphore T ensures that all the statements from A finish execution before B begins. So now there is only one way in which statements from A and B can be interleaved: A1 A2 B1 B2, and X = 11."
+  },
+  {
+    "id": 9,
+    "question": "Spinlocks are intended to provide __________ only.",
+    "options": {
+      "a": "Mutual Exclusion",
+      "b": "Bounded Waiting",
+      "c": "Aging",
+      "d": "Progress"
+    },
+    "answer": "b",
+    "explanation": "None."
+  },
+  {
+    "id": 10,
+    "question": "The following pair of processes share a common variable X.\n\nProcess A\nint Y;\nA1: Y = X*2;\nA2: X = Y;\n\nProcess B\nint Z;\nB1: Z = X+1;\nB2: X = Z;\n\n---\nX is set to 5 before either process begins execution. As usual, statements within a process are executed sequentially, but statements in process A may execute in any order with respect to statements in process B. How many different values of X are possible after both processes finish executing?",
+    "options": {
+      "a": "two",
+      "b": "three",
+      "c": "four",
+      "d": "eight"
+    },
+    "answer": "c",
+    "explanation": "A1 A2 B1 B2: X = 11; A1 B1 A2 B2: X = 6; A1 B1 B2 A2: X = 10; B1 A1 B2 A2: X = 10; B1 A1 A2 B2: X = 6; B1 B2 A1 A2: X = 12."
+  }
 ]
